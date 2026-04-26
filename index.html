@@ -6,7 +6,6 @@
     <title>個案管理紀錄智慧生成器</title>
     <style>
         :root {
-            /* 莫蘭迪護眼色調 */
             --bg-color: #f2f0eb; --card-bg: #fafaf8; --text-main: #3d3b38;
             --accent: #7a6e5d; --border: #d6d0c6; --input-focus: #a89d8d;
             --font-size: 1.2rem;
@@ -19,7 +18,6 @@
         .form-group { margin-bottom: 25px; }
         label { display: block; font-weight: 700; margin-bottom: 10px; color: #5a5752; }
         input[type="text"], select, textarea, input[type="date"] { width: 100%; padding: 14px; border: 1.5px solid var(--border); border-radius: 12px; font-size: 1.15rem; background: #fff; box-sizing: border-box; color: var(--text-main); }
-        input:focus { border-color: var(--input-focus); outline: none; }
         details { background: #fff; border: 1px solid var(--border); border-radius: 10px; margin-bottom: 10px; }
         summary { padding: 12px 15px; font-weight: bold; cursor: pointer; background: #efece7; border-radius: 10px; list-style: none; display: flex; justify-content: space-between; }
         summary::after { content: "▼"; font-size: 0.8rem; }
@@ -37,7 +35,7 @@
 <body>
 
 <div class="container">
-    <h1 style="text-align:center; color: var(--accent); font-size: 2.2rem; margin-bottom: 40px;">個案管理紀錄智慧生成系統</h1>
+    <h1 style="text-align:center; color: var(--accent); font-size: 2.2rem; margin-bottom: 40px;">個案管理紀錄智慧生成系</h1>
 
     <div class="section" style="border: 2px solid var(--accent);">
         <h2>◆ 步驟 1：選擇專案計畫</h2>
@@ -107,83 +105,83 @@
         <h2>◆ 步驟 3：技巧(專長) 與 工作職能</h2>
         <div class="form-group"><label>1. 具備駕照</label>
             <div class="row" style="background:#efece7; padding:15px; border-radius:12px;">
-                <label class="choice-item"><input type="checkbox" name="skill_lic" value="重型機車駕照">重機</label>
-                <label class="choice-item"><input type="checkbox" name="skill_lic" value="普通小型車駕照">小型車</label>
-                <input type="text" id="skill_lic_custom" placeholder="其他駕照" style="width:200px;">
+                <label class="choice-item"><input type="checkbox" name="skill_lic" value="重型機車駕照">重型機車駕照</label>
+                <label class="choice-item"><input type="checkbox" name="skill_lic" value="普通小型車駕照">普通小型車駕照</label>
+                <input type="text" id="skill_lic_custom" placeholder="其他駕照自填" style="width:200px;">
             </div>
         </div>
         <label>2. 具備證照</label>
         <details><summary>照顧醫療相關</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="照顧服務員單一級技術士技能檢定">照服員單一級</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="長照服務人員證明">長照人員證明</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="居家服務員訓練結業證明">居服訓練結業</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="照顧服務員單一級技術士技能檢定">照顧服務員單一級技術士技能檢定</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="長照服務人員證明">長照服務人員證明</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="居家服務員訓練結業證明">居家服務員訓練結業證明</label>
         </div></details>
         <details><summary>行政電腦</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="TQC電腦證照">TQC電腦</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="MOS（Word / Excel / PowerPoint）">MOS</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級電腦軟體應用技術士">丙級電軟</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級電腦軟體應用技術士">乙級電軟</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="TQC電腦證照">TQC電腦證照</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="MOS（Word / Excel / PowerPoint）">MOS（Word / Excel / PowerPoint）</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級電腦軟體應用技術士">丙級電腦軟體應用技術士</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級電腦軟體應用技術士">乙級電腦軟體應用技術士</label>
             <label class="choice-item"><input type="checkbox" name="skill_cert" value="中文輸入">中文輸入</label>
             <label class="choice-item"><input type="checkbox" name="skill_cert" value="英文輸入">英文輸入</label>
         </div></details>
         <details><summary>商業會計</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級會計事務技術士">丙級會計</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級會計事務技術士">乙級會計</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級會計事務技術士">丙級會計事務技術士</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級會計事務技術士">乙級會計事務技術士</label>
             <label class="choice-item"><input type="checkbox" name="skill_cert" value="記帳士">記帳士</label>
         </div></details>
         <details><summary>餐飲食品</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級中餐烹調技術士">丙級中餐</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級中餐烹調技術士">乙級中餐</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級烘焙技術士">丙級烘焙</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級烘焙技術士">乙級烘焙</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="食品衛生安全講習證明">食品衛生證明</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級中餐烹調技術士">丙級中餐烹調技術士</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級中餐烹調技術士">乙級中餐烹調技術士</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級烘焙技術士">丙級烘焙技術士</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級烘焙技術士">乙級烘焙技術士</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="食品衛生安全講習證明">食品衛生安全講習證明</label>
         </div></details>
         <details><summary>技術勞務類</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級職業安全衛生管理員">乙級職安</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級工業配線技術士">丙級工配</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級電腦硬體裝修技術士">丙級硬修</label>
-            <label class="choice-item"><input type="checkbox" name="skill_cert" value="堆高機操作證">堆高機</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="乙級職業安全衛生管理員">乙級職業安全衛生管理員</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級工業配線技術士">丙級工業配線技術士</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="丙級電腦硬體裝修技術士">丙級電腦硬體裝修技術士</label>
+            <label class="choice-item"><input type="checkbox" name="skill_cert" value="堆高機操作證">堆高機操作證</label>
         </div></details>
         <input type="text" id="skill_cert_custom" placeholder="其他證照自填" style="margin-bottom:20px;">
         
         <label>3. 具備工作職能</label>
         <details><summary>行政文書</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="電腦文書處理能力">電腦文書處理</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="資料輸入與建檔能力">資料輸入建檔</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="文件整理與歸檔">文件整理歸檔</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="基本文書處理（Word、Excel）">基本文書(Word/Excel)</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="電腦文書處理能力">電腦文書處理能力</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="資料輸入與建檔能力">資料輸入與建檔能力</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="文件整理與歸檔">文件整理與歸檔</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="基本文書處理（Word、Excel）">基本文書處理（Word、Excel）</label>
         </div></details>
         <details><summary>行政進階</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="行政事務處理能力">行政事務處理</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="櫃檯接待與應對能力">櫃檯接待應對</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="電話應對與溝通能力">電話應對溝通</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="行程安排與協調能力">行程安排協調</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="行政事務處理能力">行政事務處理能力</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="櫃檯接待與應對能力">櫃檯接待與應對能力</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="電話應對與溝通能力">電話應對與溝通能力</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="行程安排與協調能力">行程安排與協調能力</label>
         </div></details>
         <details><summary>服務業</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="顧客服務接待能力">顧客服務接待</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="顧客服務接待能力">顧客服務接待能力</label>
             <label class="choice-item"><input type="checkbox" name="skill_fun" value="客訴處理能力">客訴處理能力</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="門市銷售與商品介紹">門市銷售介紹</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="門市銷售與商品介紹">門市銷售與商品介紹</label>
             <label class="choice-item"><input type="checkbox" name="skill_fun" value="收銀操作能力">收銀操作能力</label>
         </div></details>
         <details><summary>商業會計</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="基本會計帳務處理">基本會計帳務</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="發票開立與核對">發票開立核對</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="基本會計帳務處理">基本會計帳務處理</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="發票開立與核對">發票開立與核對</label>
             <label class="choice-item"><input type="checkbox" name="skill_fun" value="收支管理">收支管理</label>
         </div></details>
         <details><summary>勞務作業</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="體力勞動工作能力">體力勞動能力</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="簡易機械操作能力">簡易機械操作</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="體力勞動工作能力">體力勞動工作能力</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="簡易機械操作能力">簡易機械操作能力</label>
             <label class="choice-item"><input type="checkbox" name="skill_fun" value="包裝作業能力">包裝作業能力</label>
             <label class="choice-item"><input type="checkbox" name="skill_fun" value="倉儲整理能力">倉儲整理能力</label>
         </div></details>
         <details><summary>照顧服務</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="生活照顧服務能力">生活照顧服務</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="生活照顧服務能力">生活照顧服務能力</label>
             <label class="choice-item"><input type="checkbox" name="skill_fun" value="長者照護能力">長者照護能力</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="基本醫療照護協助">基本醫療協助</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="基本醫療照護協助">基本醫療照護協助</label>
         </div></details>
         <details><summary>軟實力</summary><div class="choice-group">
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="具備良好溝通能力">良好溝通能力</label>
-            <label class="choice-item"><input type="checkbox" name="skill_fun" value="工作態度積極負責">積極負責</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="具備良好溝通能力">具備良好溝通能力</label>
+            <label class="choice-item"><input type="checkbox" name="skill_fun" value="工作態度積極負責">工作態度積極負責</label>
             <label class="choice-item"><input type="checkbox" name="skill_fun" value="配合度高">配合度高</label>
             <label class="choice-item"><input type="checkbox" name="skill_fun" value="抗壓性佳">抗壓性佳</label>
             <label class="choice-item"><input type="checkbox" name="skill_fun" value="願意學習新技能">願意學習新技能</label>
@@ -195,7 +193,7 @@
         <h2>◆ 步驟 4：工作目標與本次待業</h2>
         <div class="grid">
             <div class="form-group"><label>1. 工作類型</label><input type="text" id="target_job"></div>
-            <div class="form-group"><label>2. 工作地點</label><input type="text" id="target_loc" placeholder="區域"></div>
+            <div class="form-group"><label>2. 工作地點</label><input type="text" id="target_loc"></div>
             <div class="form-group"><label>3. 交通時間 (分)</label><input type="text" id="target_commute"></div>
             <div class="form-group"><label>4. 希望待遇</label><input type="text" id="target_salary"></div>
         </div>
@@ -237,7 +235,7 @@
         </div>
     </div>
 
-    <button class="btn-main" id="generate_btn">🚀 生成個案紀錄</button>
+    <button class="btn-main" id="generate_btn">🚀 生成個案紀錄 🚀</button>
 
     <div id="resultArea">
         <button class="copy-btn" id="copy_btn">複製全部內容</button>
@@ -249,8 +247,8 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const mSelects = ['exp_m', 'idle_m'];
-    mSelects.forEach(id => {
+    const monthSelects = ['exp_m', 'idle_m'];
+    monthSelects.forEach(id => {
         const el = document.getElementById(id);
         for(let i=0; i<=11; i++) {
             let opt = document.createElement('option');
@@ -299,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if(e.target.checked) {
                 const div = document.createElement('div');
                 div.id = `mem_row_${name}`;
-                div.innerHTML = `<label>${name}背景</label><input type="text" class="mem-bg-input" data-name="${name}" placeholder="職業或角色">`;
+                div.innerHTML = `<label>${name}背景</label><input type="text" class="mem-bg-input" data-name="${name}" placeholder="職業背景或角色">`;
                 container.appendChild(div);
             } else {
                 const target = document.getElementById(`mem_row_${name}`);
@@ -344,16 +342,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const eduVal = document.getElementById('edu_history').value.split(/[,，]/).filter(s => s.trim());
         let eduText = eduVal.map((s, i) => `${i+1}.${s.trim()}。`).join('\n');
 
-        // 其他
+        // 其他 (智慧編號)
         const subs = Array.from(document.querySelectorAll('input[name="other_subs"]:checked')).map(i => i.value);
-        const curPlan = document.getElementById('other_plan').value;
+        const curPlanVal = document.getElementById('other_plan').value;
         let otherLines = [];
         if (subs.length > 0) otherLines.push(`案主目前有${subs.join('、')}。`);
-        if (curPlan !== "無") otherLines.push(`案主目前有運用${curPlan}求職找工作。`);
+        if (curPlanVal !== "無") otherLines.push(`案主目前有運用${curPlanVal}求職找工作。`);
         if (otherLines.length === 0) otherLines.push(`案主目前無申請及運用任一補助及津貼。`);
         let otherText = "【其他】\n" + otherLines.map((l, i) => `${i+1}.${l}`).join('\n');
 
-        // 處遇 (精準範本)
+        // 處遇
         const pType = planSelect.value;
         const comp = document.getElementById('t_comp')?.value || "XX公司";
         const job = document.getElementById('t_job')?.value || "XX職務";
@@ -366,7 +364,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const tDate = document.getElementById('t_date').value || new Date().toLocaleDateString();
             treat += `案主於待業期間努力以行政、助理的工作求職 ，但因欠缺就業機會與求職管道資訊，而無法順利轉業及再就業，至今已待業超過${idleT}，經${tDate}由職進行次求職服務時，了解案主求職能力及工作目標後，協助運用弱勢勞工就業協助措施以就業獎勵予以支持穩定案主就業，媒合${comp}的${job}職缺，並請案主於開卡後七日內回覆介紹結果回覆卡，以利追蹤求職概況。`;
         } else if (pType === "青年職得好評計畫") {
-            treat += `1.案主待業已超過180天，初步諮詢青年面臨求職困難。\n2.本日經業務輔導員評估，案主符合青年職得好評計畫之參與資格，且有深度就業諮詢需求，故本日協助辦辦理該計畫資格審核，後續完成深度就業諮詢後，將持續追蹤、提供求職服務。`;
+            treat += `1.案主待業已超過180天，初步諮詢青年面臨求職困難。\n2.本日經業務輔導員評估，案主符合青年職得好評計畫之參與資格，且有深度就業諮詢需求，故本日協助辦理該計畫資格審核，後續完成深度就業諮詢後，將持續追蹤、提供求職服務。`;
         } else if (pType === "外台青年職得好評") {
             treat += `1.案主待業已超過6個月以上，初步諮詢青年面臨求職困難。\n2.本日經${document.getElementById('t_ext').value}業務輔導員評估，案主符合青年職得好評計畫之參與資格，且有深度諮詢需求，故本日協助辦理該計畫資格審核。\n3.礙於鄉鎮台沒有開立案主管理的權限，故於${document.getElementById('t_date_val').value}經臺中站${document.getElementById('t_tc').value}業務輔導員進行就服系統個管開案作業，並持續由${document.getElementById('t_ext').value}業務輔導員追蹤、提供求職服務。`;
         } else if (pType === "缺工") {
